@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountLoginView" customModule="_68225" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ixU-d4-RDx"/>
+                <outlet property="lblLogin" destination="snv-jc-wlc" id="vKL-ZD-yXb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="CgI-qb-xn0">
+                    <rect key="frame" x="340" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="HQV-5K-dBo"/>
+                        <constraint firstAttribute="width" constant="20" id="MTs-4u-4Uj"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="YdC-uJ-wZq"/>
+                        <constraint firstAttribute="height" constant="20" id="bgC-zX-n0B"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snv-jc-wlc">
+                    <rect key="frame" x="10" y="10" width="60" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CgI-qb-xn0" secondAttribute="trailing" constant="15" id="Kx3-TB-n9j"/>
+                <constraint firstItem="snv-jc-wlc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="MP2-Fo-com"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="snv-jc-wlc" secondAttribute="bottom" constant="10" id="YUh-nI-gTM"/>
+                <constraint firstItem="CgI-qb-xn0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="dVG-Fs-101"/>
+                <constraint firstItem="snv-jc-wlc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nGT-I6-z1d"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="CgI-qb-xn0" secondAttribute="bottom" constant="15" id="wKa-cb-GPd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="YWj-eb-9I0" appends="YES" id="krr-yQ-reR"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="YWj-eb-9I0">
+            <connections>
+                <action selector="onClick:" destination="-1" id="CHf-rj-dZV"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow-right" width="384" height="384"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  568225
+
+  Created by Maurice Wijnia on 19/10/2018.
+  Copyright © 2018 Maurice Wijnia. All rights reserved.
+*/
+
+"app_title" = "NET.NL/568225";
+"article" = "Article";
+"feeds" = "Feeds";
+"login" = "Login";
+"logout" = "Logout";
+"register" = "Register";
+"account" = "Account";
+"username" = "Username";
+"password" = "Password";
+"OK" = "OK";
+"login_success" = "Successfully logged in";
+"login_failed" = "Login failed";
+"registration_success" = "Successfully registered";
+"registration_failed" = "Registration failed";
+"favorites" = "Favorites";
+"like" = "Like";
+"unlike" = "Unlike";
+"something_went_wrong" = "Something went wrong";
+"read_more" = "Read more";

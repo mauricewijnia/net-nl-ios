@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountRegisterView" customModule="_68225" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="VFP-Fn-qG5" id="iDY-SO-RNm"/>
+                <outlet property="lblRegister" destination="se2-3A-987" id="vRM-Mu-ZSt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VFP-Fn-qG5">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="BJS-lf-fXE">
+                    <rect key="frame" x="340" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="4ys-9M-KDh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="cRf-vY-aLT"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="jSY-ME-chB"/>
+                        <constraint firstAttribute="height" constant="20" id="jlr-Mv-qoA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lblRegister" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se2-3A-987">
+                    <rect key="frame" x="10" y="10" width="81" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="vCH-NA-Cto" firstAttribute="trailing" secondItem="BJS-lf-fXE" secondAttribute="trailing" constant="15" id="ESd-hG-vOe"/>
+                <constraint firstItem="vCH-NA-Cto" firstAttribute="bottom" secondItem="BJS-lf-fXE" secondAttribute="bottom" constant="15" id="IJO-Rr-LhA"/>
+                <constraint firstItem="vCH-NA-Cto" firstAttribute="bottom" secondItem="se2-3A-987" secondAttribute="bottom" constant="10" id="TTI-uW-mLs"/>
+                <constraint firstItem="BJS-lf-fXE" firstAttribute="top" secondItem="vCH-NA-Cto" secondAttribute="top" constant="15" id="VgF-ww-pf5"/>
+                <constraint firstItem="se2-3A-987" firstAttribute="top" secondItem="vCH-NA-Cto" secondAttribute="top" constant="10" id="j5D-Mx-mbA"/>
+                <constraint firstItem="se2-3A-987" firstAttribute="leading" secondItem="vCH-NA-Cto" secondAttribute="leading" constant="10" id="m8I-xr-vyS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vCH-NA-Cto"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="lJh-YF-hdL" appends="YES" id="gMJ-ww-Vpv"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="lJh-YF-hdL">
+            <connections>
+                <action selector="onClick:" destination="-1" id="2QI-dY-9oX"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow-right" width="384" height="384"/>
+    </resources>
+</document>
