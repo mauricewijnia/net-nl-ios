@@ -16,6 +16,7 @@ class ArticleTableViewCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var favoriteView: UIImageView!
     
     func render(article: Article) {
         self.article = article
@@ -26,6 +27,12 @@ class ArticleTableViewCell: UITableViewCell {
         if let a = article {
             imgView.kf.setImage(with: URL(string: a.image))
             lblTitle.text = a.title
+            
+            if a.isLiked {
+                favoriteView.isHidden = false
+            } else {
+                favoriteView.isHidden = true
+            }
         }
     }
     
@@ -37,5 +44,8 @@ class ArticleTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         super.prepareForReuse()
         // CLEANUP!
+        imgView.image = UIImage(named: "placeholder")
+        lblTitle.text = ""
+        favoriteView.isHidden = true
     }
 }

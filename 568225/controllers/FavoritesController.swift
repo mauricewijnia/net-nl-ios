@@ -24,6 +24,7 @@ class FavoritesController: ApplicationController, ArticlesDisplay {
     
     func getArticles() {
         Article.favorites(callback: renderArticles)
+        articleTableView.startLoading()
     }
     
     func getMore() {

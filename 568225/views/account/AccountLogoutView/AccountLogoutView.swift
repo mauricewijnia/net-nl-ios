@@ -43,6 +43,7 @@ class AccountLogoutView: UIView {
         User.currentUser()?.logoff()
         if let ac = accountController {
             ac.refresh()
+            ac.checkFavorites()
         }
     }
 }

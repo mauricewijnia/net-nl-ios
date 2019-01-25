@@ -14,6 +14,7 @@ class ArticleTableView: UIView {
     var articles: Array<Article> = []
     var navigationController: UINavigationController?
     var parentController: ArticlesDisplay?
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var tableView: UITableView!
@@ -60,6 +61,7 @@ class ArticleTableView: UIView {
         
         tableView.reloadData()
         endRefresh()
+        stopLoading()
     }
     
     func renderMore(articles: Array<Article>) {
@@ -68,12 +70,23 @@ class ArticleTableView: UIView {
             tableView.reloadData()
         }
         endRefresh()
+        stopLoading()
     }
     
     func endRefresh() {
         if parentController != nil {
             refreshControl.endRefreshing()
         }
+    }
+    
+    func startLoading() {
+        spinner.isHidden = false
+        spinner.startAnimating()
+    }
+    
+    func stopLoading() {
+        spinner.isHidden = true
+        spinner.stopAnimating()
     }
 }
 

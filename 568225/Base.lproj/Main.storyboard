@@ -13,7 +13,7 @@
         <scene sceneID="9Ks-wO-kEK">
             <objects>
                 <navigationController id="Hro-Mr-Yo4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="SCd-g6-Mdw"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="baseline_home_black_24pt" selectedImage="baseline_home_black_24pt" id="SCd-g6-Mdw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bns-be-vns">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -30,7 +30,7 @@
         <scene sceneID="MNy-6Y-A4h">
             <objects>
                 <navigationController id="dNr-nr-7zG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="fpT-Yh-yHF"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="baseline_star_rate_black_24pt" selectedImage="baseline_star_rate_black_24pt" id="fpT-Yh-yHF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Oy-5j-bZ5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -78,7 +78,7 @@
         <scene sceneID="Jqy-kf-UfK">
             <objects>
                 <navigationController id="tZR-te-4Dg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Account" id="RQe-ff-oeS"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="baseline_person_black_24pt" selectedImage="baseline_person_black_24pt" id="RQe-ff-oeS"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xKb-In-mEx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -158,13 +158,13 @@
                                 <rect key="frame" x="10" y="30" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="POw-M6-0gC">
                                 <rect key="frame" x="10" y="70" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-eB-CTp">
                                 <rect key="frame" x="10" y="110" width="355" height="30"/>
@@ -269,10 +269,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-qa-04z">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aRW-qa-04z">
                                 <rect key="frame" x="0.0" y="20" width="375" height="597"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCl-LC-9KT">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MCl-LC-9KT">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="597"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hqw-aM-dhw">
@@ -281,22 +281,37 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Ju-fvI">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Ju-fvI">
                                                 <rect key="frame" x="10" y="44" width="355" height="320"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="320" id="Ezk-to-ynB"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-Zb-taC">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="Summary" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjP-Zb-taC">
                                                 <rect key="frame" x="10" y="374" width="355" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="lblLink" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z2-AZ-GCL">
+                                                <rect key="frame" x="10" y="400" width="355" height="21"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" link="YES" staticText="YES"/>
+                                                </accessibility>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="28m-pl-8uO" appends="YES" id="dC8-G6-den"/>
+                                                </connections>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="Hqw-aM-dhw" firstAttribute="top" secondItem="MCl-LC-9KT" secondAttribute="top" constant="10" id="7Fb-NF-1Lj"/>
+                                            <constraint firstItem="8Z2-AZ-GCL" firstAttribute="leading" secondItem="MCl-LC-9KT" secondAttribute="leading" constant="10" id="Ay4-rb-Fb2"/>
+                                            <constraint firstItem="8Z2-AZ-GCL" firstAttribute="top" secondItem="DjP-Zb-taC" secondAttribute="bottom" constant="10" id="Dxp-DX-ODw"/>
                                             <constraint firstItem="hfe-Ju-fvI" firstAttribute="top" secondItem="Hqw-aM-dhw" secondAttribute="bottom" constant="10" id="Enz-ep-bpB"/>
                                             <constraint firstAttribute="trailing" secondItem="Hqw-aM-dhw" secondAttribute="trailing" constant="10" id="HIi-3G-iYS"/>
                                             <constraint firstItem="Hqw-aM-dhw" firstAttribute="leading" secondItem="MCl-LC-9KT" secondAttribute="leading" constant="10" id="Sc5-DL-Egu"/>
@@ -304,14 +319,16 @@
                                             <constraint firstItem="hfe-Ju-fvI" firstAttribute="leading" secondItem="MCl-LC-9KT" secondAttribute="leading" constant="10" id="h6D-5B-nnL"/>
                                             <constraint firstItem="DjP-Zb-taC" firstAttribute="leading" secondItem="MCl-LC-9KT" secondAttribute="leading" constant="10" id="kxt-QB-WxK"/>
                                             <constraint firstAttribute="trailing" secondItem="hfe-Ju-fvI" secondAttribute="trailing" constant="10" id="rv7-xN-IZQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="8Z2-AZ-GCL" secondAttribute="trailing" constant="10" id="sSZ-4H-ZQS"/>
                                             <constraint firstItem="DjP-Zb-taC" firstAttribute="top" secondItem="hfe-Ju-fvI" secondAttribute="bottom" constant="10" id="usD-Fx-VTz"/>
+                                            <constraint firstAttribute="bottom" secondItem="8Z2-AZ-GCL" secondAttribute="bottom" constant="35" id="uzE-vu-cP0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="MCl-LC-9KT" firstAttribute="height" secondItem="aRW-qa-04z" secondAttribute="height" id="HDc-hR-A4t"/>
+                                    <constraint firstItem="MCl-LC-9KT" firstAttribute="height" secondItem="aRW-qa-04z" secondAttribute="height" priority="250" id="5of-sp-qFe"/>
                                     <constraint firstAttribute="bottom" secondItem="MCl-LC-9KT" secondAttribute="bottom" id="JnZ-bS-8to"/>
-                                    <constraint firstItem="MCl-LC-9KT" firstAttribute="width" secondItem="aRW-qa-04z" secondAttribute="width" id="VcU-4h-wGL"/>
+                                    <constraint firstItem="MCl-LC-9KT" firstAttribute="width" secondItem="aRW-qa-04z" secondAttribute="width" id="Qag-7n-1qg"/>
                                     <constraint firstItem="MCl-LC-9KT" firstAttribute="leading" secondItem="aRW-qa-04z" secondAttribute="leading" id="f5I-Do-pLD"/>
                                     <constraint firstItem="MCl-LC-9KT" firstAttribute="top" secondItem="aRW-qa-04z" secondAttribute="top" id="jR2-Wl-EWC"/>
                                     <constraint firstAttribute="trailing" secondItem="MCl-LC-9KT" secondAttribute="trailing" id="tEB-Eg-B4W"/>
@@ -351,12 +368,19 @@
                     <connections>
                         <outlet property="btnReadMore" destination="zwB-gK-eXh" id="Wod-u8-3vr"/>
                         <outlet property="imageView" destination="hfe-Ju-fvI" id="gzs-2f-mK4"/>
+                        <outlet property="lblLink" destination="8Z2-AZ-GCL" id="Sbb-AE-RDr"/>
                         <outlet property="lblSummary" destination="DjP-Zb-taC" id="8xx-Qe-0vw"/>
                         <outlet property="lblTitle" destination="Hqw-aM-dhw" id="Gdq-HP-0v0"/>
                         <outlet property="scrollView" destination="aRW-qa-04z" id="HhV-FI-ozr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3kL-fb-nb3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="28m-pl-8uO">
+                    <connections>
+                        <action selector="onLinkClick:" destination="WS8-hq-XHZ" id="bqg-bh-eYU"/>
+                        <outlet property="delegate" destination="8Z2-AZ-GCL" id="2Yf-x8-LIa"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="752.79999999999995" y="133.5832083958021"/>
         </scene>
@@ -372,13 +396,13 @@
                                 <rect key="frame" x="10" y="30" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwl-rQ-gqD">
                                 <rect key="frame" x="10" y="70" width="355" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gby-ws-bn2">
                                 <rect key="frame" x="10" y="110" width="355" height="30"/>
@@ -424,4 +448,10 @@
             <point key="canvasLocation" x="1300" y="1630"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baseline_home_black_24pt" width="48" height="48"/>
+        <image name="baseline_person_black_24pt" width="48" height="48"/>
+        <image name="baseline_star_rate_black_24pt" width="48" height="48"/>
+        <image name="placeholder" width="225" height="225"/>
+    </resources>
 </document>

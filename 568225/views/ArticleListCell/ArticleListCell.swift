@@ -18,7 +18,7 @@ class ArticleListCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     func render() {
-        imageView.kf.setImage(with: URL(string: (article?.image)!))
+        imageView.kf.setImage(with: URL(string: (article?.image)!), placeholder: UIImage(named: "placeholder"))
         lblTitle.text = article?.title
         
     }

@@ -29,10 +29,12 @@ class ArticlesController: ApplicationController, ArticlesDisplay {
     
     func getArticles() {
         Article.all(callback: renderArticles)
+        articleTableView.startLoading()
     }
     
     func getMore() {
         Article.all(count: 20, nextId: nextId, callback: renderMore)
+        articleTableView.startLoading()
     }
     
     func renderArticles(articles: Article.Responses.Articles) {

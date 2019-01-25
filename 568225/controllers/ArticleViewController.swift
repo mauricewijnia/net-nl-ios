@@ -18,6 +18,7 @@ class ArticleViewController: ApplicationController, LikeListener {
     @IBOutlet weak var lblSummary: UILabel!
     @IBOutlet weak var btnReadMore: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var lblLink: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,17 +26,11 @@ class ArticleViewController: ApplicationController, LikeListener {
         if let art = article {
             lblTitle.text = art.title
             lblSummary.text = art.summary
-            imageView.kf.setImage(with: URL(string: art.image))
+            lblLink.text = art.url
+            lblLink.isUserInteractionEnabled = true
+            imageView.kf.setImage(with: URL(string: art.image), placeholder: UIImage(named: "placeholder"))
             btnReadMore.setTitle(NSLocalizedString("read_more", comment: ""), for: .normal)
         }
-        
-        var contentRect = CGRect.zero
-        
-        for view in scrollView.subviews {
-            contentRect = contentRect.union(view.frame)
-        }
-        scrollView.contentSize = contentRect.size
-        scrollView.setNeedsLayout()
 
         setupLike()
     }
@@ -76,6 +71,11 @@ class ArticleViewController: ApplicationController, LikeListener {
     }
     
     @IBAction func onReadMore(_ sender: Any) {
+        if let art = article {
+            UIApplication.shared.open(NSURL(string:art.url)! as URL)
+        }
+    }
+    @IBAction func onLinkClick(_ sender: Any) {
         if let art = article {
             UIApplication.shared.open(NSURL(string:art.url)! as URL)
         }
