@@ -100,6 +100,7 @@
 		51E2668F21FBA00F00400367 /* RegisterListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterListener.swift; sourceTree = "<group>"; };
 		51E2669121FBA27400400367 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		51E2669321FBAD6D00400367 /* LikeListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListener.swift; sourceTree = "<group>"; };
+		51E2669621FBC76700400367 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		51E7FF582179C4E500896E80 /* 568225.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 568225.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E7FF5B2179C4E500896E80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51E7FF602179C4E500896E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -667,6 +668,7 @@
 			children = (
 				51E7FF602179C4E500896E80 /* Base */,
 				51E7FF8E2179CA1800896E80 /* nl */,
+				51E2669621FBC76700400367 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

@@ -6,22 +6,22 @@
 "D2I-eB-CTp.normalTitle" = "btnLogin";
 
 /* Class = "UILabel"; text = "Summary"; ObjectID = "DjP-Zb-taC"; */
-"DjP-Zb-taC.text" = "Samenvatting";
+"DjP-Zb-taC.text" = "Summary";
 
 /* Class = "UIButton"; normalTitle = "btnRegister"; ObjectID = "Gby-ws-bn2"; */
 "Gby-ws-bn2.normalTitle" = "btnRegister";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "Hqw-aM-dhw"; */
-"Hqw-aM-dhw.text" = "Titel";
+"Hqw-aM-dhw.text" = "Title";
 
 /* Class = "UITabBarItem"; title = "Account"; ObjectID = "RQe-ff-oeS"; */
 "RQe-ff-oeS.title" = "Account";
 
 /* Class = "UITabBarItem"; title = "Home"; ObjectID = "SCd-g6-Mdw"; */
-"SCd-g6-Mdw.title" = "Thijs";
+"SCd-g6-Mdw.title" = "Home";
 
 /* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "fpT-Yh-yHF"; */
-"fpT-Yh-yHF.title" = "Favorieten";
+"fpT-Yh-yHF.title" = "Favorites";
 
 /* Class = "UIButton"; normalTitle = "btnReadMore"; ObjectID = "zwB-gK-eXh"; */
 "zwB-gK-eXh.normalTitle" = "btnReadMore";

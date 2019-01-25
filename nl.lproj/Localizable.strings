@@ -6,3 +6,23 @@
   Copyright © 2018 Maurice Wijnia. All rights reserved.
 */
 
+"app_title" = "NET.NL/568225";
+"article" = "Artikel";
+"feeds" = "Categorieën";
+"login" = "Inloggen";
+"logout" = "Uitloggen";
+"register" = "Registreren";
+"account" = "Account";
+"username" = "Gebruikersnaam";
+"password" = "Wachtwoord";
+"OK" = "OK";
+"login_success" = "Succesvol ingelogd";
+"login_failed" = "Login gefaald";
+"registration_success" = "Succesvol geregistreerd";
+"registration_failed" = "Registratie gefaald";
+"favorites" = "Favorieten";
+"like" = "Like";
+"unlike" = "Unlike";
+"something_went_wrong" = "Er is iets fout gegaan";
+"read_more" = "Lees verder";
+"link" = "Link";
